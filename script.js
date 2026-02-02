@@ -64,7 +64,7 @@ sleepButton.addEventListener("click", function() {
 
 // change image and background based on happiness level
 function updateSnorlaxImage(happiness) {
-    if (happiness <= 15) {
+    if (happiness < 15) {
         document.body.style.backgroundColor = "#ffcccc";
         snorlaxElement.src = snorlax_img[1];
     } else {
